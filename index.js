@@ -11,7 +11,7 @@ f = Math.floor
 setInterval(() => {
   today = new Date()
   yearNow = today.getFullYear()
-  nextYear = yearNow + 1
+  nextYear =  'January 1 ' + (yearNow + 1)
 
   let ms = Date.parse(nextYear) - Date.now()
   let secs = f(ms/1000%60).toString().padStart(2, '0')
